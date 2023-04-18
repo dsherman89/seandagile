@@ -1,18 +1,21 @@
 <html>
   <head>
-    <title>Some Title</title>
+    <title>My Application</title>
+
+    <script src="code.js"></script>
+
   </head>
   <body>
-    <h1>Some Heading</h1>
+    <h1>Login Page</h1>
 
     <!-- Start of Login Section -->
-    <form action="action_page.php" method="post">
+    <form id="myForm" action="action_page.php" onsubmit="validateForm()" method="post">
       <div class="container">
         <label for="uname">Username:</label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
+        <input type="text" id="uname" placeholder="Enter Username" name="uname" required>
 
         <label for="psw">Password:</label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
 
         <button type="submit">Login</button>
       </div>
